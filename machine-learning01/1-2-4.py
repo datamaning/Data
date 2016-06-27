@@ -22,4 +22,14 @@ print mymatrix1*mymatrix3
 
 print mymatrix1.T
 print mymatrix1.transpose()
+[m,n]=np.shape(mymatrix1)
+print m,n
 
+myscll=mymatrix1[0]
+print myscll
+
+myscl2=mymatrix.T[0]
+print myscl2
+
+mycopy=mymatrix1.copy()
+print mycopy
