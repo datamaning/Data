@@ -5,6 +5,7 @@ import os
 import jieba
 import codecs
 from sklearn.datasets.base import Bunch
+import cPickle as pickle 
 reload(sys)
 sys.setdefaultencoding('utf-8')
 print sys.getdefaultencoding()
@@ -49,5 +50,5 @@ for mydir in catelist:
             bunch.filenames.append(fullname)
             bunch.contents.append(readfile(fullname).strip())
 file_obj=open(wordbag_path,'wb')
-prickle.dump(bunch,file_obj)
+pickle.dump(bunch,file_obj)
 file_obj.close
